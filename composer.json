@@ -1,0 +1,38 @@
+{
+	"name": "nu-info-site",
+	"require": {
+		"composer/installers": "*",
+		"nu-info-theme-master":"dev-package",
+		"nu-info-theme-child":"dev-master",
+		"alleyinteractive/wordpress-fieldmanager":"*",
+		"wp-premium/gravityforms":"*",
+		"wpackagist-plugin/amp":"*"
+	},
+	"repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+		},
+		{
+            "type":"vcs",
+            "url":"https://github.com/NationalUniversitySystem/info-theme"
+		},
+		{
+			"type":"vcs",
+            "url":"https://github.com/cmaustnu/nu-info-theme-child"
+        }
+	],
+	"extra": {
+        "installer-paths": {
+			"themes/{$name}": [
+				"nu-info-theme-master",
+				"nu-info-theme-child"
+			],
+			"plugins/{$name}/": [
+				"wpackagist-plugin/amp",
+				"alleyinteractive/wordpress-fieldmanager",
+				"wp-premium/gravityforms"
+			]
+        }
+    }
+}
