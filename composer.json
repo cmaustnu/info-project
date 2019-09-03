@@ -3,7 +3,6 @@
 	"require": {
 		"composer/installers": "*",
 		"nu-info-theme-master": "dev-package",
-		"nu-info-theme-child": "dev-master",
 
 		"gravityforms-nus-customization": "dev-package",
 		"alleyinteractive/wordpress-fieldmanager": "*",
@@ -18,10 +17,6 @@
 		{
             "type":"vcs",
             "url":"https://github.com/NationalUniversitySystem/info-theme"
-		},
-		{
-			"type":"vcs",
-            "url":"https://github.com/cmaustnu/nu-info-theme-child"
 		},
 		{
 			"type":"vcs",
