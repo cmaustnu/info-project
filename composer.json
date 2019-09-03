@@ -2,11 +2,13 @@
 	"name": "nu-info-site",
 	"require": {
 		"composer/installers": "*",
-		"nu-info-theme-master":"dev-package",
-		"nu-info-theme-child":"dev-master",
-		"alleyinteractive/wordpress-fieldmanager":"*",
-		"wp-premium/gravityforms":"*",
-		"wpackagist-plugin/amp":"*"
+		"nu-info-theme-master": "dev-package",
+		"nu-info-theme-child": "dev-master",
+
+		"gravityforms-nus-customization": "dev-package",
+		"alleyinteractive/wordpress-fieldmanager": "*",
+		"wp-premium/gravityforms": "*",
+		"wpackagist-plugin/amp": "*"
 	},
 	"repositories":[
         {
@@ -20,6 +22,10 @@
 		{
 			"type":"vcs",
             "url":"https://github.com/cmaustnu/nu-info-theme-child"
+		},
+		{
+			"type":"vcs",
+            "url":"https://github.com/NationalUniversitySystem/gravityforms-nus-customization"
         }
 	],
 	"extra": {
@@ -31,7 +37,8 @@
 			"plugins/{$name}/": [
 				"wpackagist-plugin/amp",
 				"alleyinteractive/wordpress-fieldmanager",
-				"wp-premium/gravityforms"
+				"wp-premium/gravityforms",
+				"gravityforms-nus-customization"
 			]
         }
     }
